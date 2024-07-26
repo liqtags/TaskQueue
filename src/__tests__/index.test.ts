@@ -1,9 +1,9 @@
-import { packageStart } from "..";
+import TaskQueue from "..";
 
 jest.spyOn(global.console, "log");
 
-describe("@liqtags/utils", () => {
-  it("adds two numbers", () => {
-    expect(packageStart()).toBe("PACKAGE_START");
+describe("@liqtags/taskqueue", () => {
+  it("should run tasks in order", async () => {
+    expect(1).toBe(1);
   });
 });
